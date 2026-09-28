@@ -16,7 +16,7 @@ document.addEventListener('click', reproducirPrimerClic, { once: true });
 
 if (btnMusica) {
     btnMusica.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evitar que el clic interfiera con el listener global
+        e.stopPropagation();
         if (audio.paused) {
             audio.play();
             if (iconoMusica) iconoMusica.textContent = '🔊';
