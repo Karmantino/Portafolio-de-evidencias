@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Imagenes/documentos.png">
+</head>
+<body id="inicio">
+    <header>
+        <a href="index.html">
+            <img src="Imagenes/tprogramando.jpg" alt="Conseguir chamba" class="logo">
+        </a>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#sm">Sobre Mi</a>
+                    <a href="index.html#fa">Formación Académica</a>
+                    <a href="index.html#fl">Formación Laboral</a>
+                </li>
+            </ul>
+            <button id="boton-musica" class="boton-musica" title="Música de fondo">
+                <span id="icono-musica">🎵</span>
+            </button>
+        </nav>
+    </header>
+
+    <h1>Contactame</h1>
+
+    <main class="principal">
+        <section class="texto">
+            <h2>Ponte en contacto</h2>
+            <p>Si necesitas algo dímelo.</p>
+
+            <form class="form" action="mailto:karmantinomar@gmail.com" method="POST" enctype="text/plain">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="button">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>Redes sociales:</p>
+            <nav>
+                <a href="https://wa.me/524775402587"><img src="Imagenes/whats.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/k.d.a.mtnz?fbclid=IwY2xjawUlPqVleHRuA2FlbQIxMABwZG9mBWJyaWQRMW8zTm5qQkl3UFBka2N6YU1zcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEen6YTKfhWPZdy1SHu--4JaCIhChJilmPZcejiHhIfO0UJo28KmO0MEcKzqfs_aem_U5fIM_xZJEt5Q2hSt3uTTw"><img src="Imagenes/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/Karol.Aguilera.M"><img src="Imagenes/facebook.png" alt="Facebook"></a>
+            </nav>
+        </section>
+    </footer>
+
+    <audio id="musica-fondo" loop preload="auto">
+        <source src="audios/Littleroot Town (lo-fi mix).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
